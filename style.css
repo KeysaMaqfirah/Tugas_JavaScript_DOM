@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  section {
+    height: 100vh;
+    background: #000;
+  }
+  h1 {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 65%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    color: #ddd;
+    font-size: 5rem;
+    font-family: sans-serif;
+    letter-spacing: 0.2rem;
+  }
+  
+  h1 span {
+    opacity: 0;
+    display: inline-block;
+    animation: animate 1s linear forwards;
+  }
+  @keyframes animate {
+    0% {
+      opacity: 0;
+      transform: rotateY(90deg);
+      filter: blur(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: rotateY(0deg);
+      filter: blur(0px);
+    }
+  }
+  
+  h1 span:nth-child(1) {
+    animation-delay: 1s;
+  }
+  h1 span:nth-child(2) {
+    animation-delay: 2s;
+  }
+  h1 span:nth-child(3) {
+    animation-delay: 2.5s;
+  }
+  h1 span:nth-child(4) {
+    animation-delay: 3s;
+  }
+  h1 span:nth-child(5) {
+    animation-delay: 3.5s;
+  }
+  h1 span:nth-child(6) {
+    animation-delay: 3.75s;
+  }
+  h1 span:nth-child(7) {
+    animation-delay: 4s;
+  }
+  h1 span:nth-child(8) {
+    animation-delay: 4.5s;
+  }
+  
+  @keyframes fadeIn {
+      from {
+        opacity: 0; 
+        transform: translateY(-20px); 
+      }
+      to {
+        opacity: 1; 
+        transform: translateY(0); 
+      }
+    }
+    
+    
+  button {
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      opacity: 0; 
+      transition: opacity 0.3s ease; 
+      
+     
+  }
+  
+  button:hover {
+      opacity: 1; 
+      
+  }
+  
+  button:active {
+      background-color: rgb(182, 105, 105); /* Mengubah warna latar belakang saat tombol ditekan */
+  }
+  

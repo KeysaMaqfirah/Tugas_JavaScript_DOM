@@ -1,0 +1,63 @@
+body {
+  background: #78c1f3;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('sunset3.jpg');
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+}
+  
+.container {
+  background-color: rgba(255, 255, 255, 0.195);
+  padding: 50px;
+  width: 800px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.notebook-gif {
+  width: 100px; 
+  height: auto; 
+  left: 90px;
+  margin-left: 250px;
+  margin-top: -130px;
+}
+
+.task-item {
+  margin-bottom: 10px;
+  background-color: #ecf0f2a0;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+/* Transisi tombol ketika diklik */
+.btn-clicked {
+  transform: scale(0.95);
+  transition: transform 0.1s ease-out;
+}
+
+/* Animasi tombol ketika diklik */
+@keyframes btn-animation {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.btn-animated {
+  animation: btn-animation 0.3s;
+}
+
+/* Transisi tambahan untuk tombol */
+.btn {
+  transition: transform 0.2s ease-out;
+}
+
+/* Efek hover pada tombol */
+.btn:hover {
+  transform: scale(1.05);
+}
